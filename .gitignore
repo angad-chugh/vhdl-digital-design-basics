@@ -1,0 +1,7 @@
+.DS_Store
+work-obj*.cf
+*.ghw
+*.vcd
+*.o
+*.exe
+.vscode/
