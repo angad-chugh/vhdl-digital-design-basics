@@ -4,4 +4,5 @@ work-obj*.cf
 *.vcd
 *.o
 *.exe
+*_tb
 .vscode/
