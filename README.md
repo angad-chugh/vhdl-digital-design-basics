@@ -5,6 +5,7 @@ A collection of VHDL projects and testbenches developed while learning Digital S
 ## Current Projects
 - AND gate
 - 4-to-1 multiplexer
+- N-bit Synchronous Counter
 
 ## Tools
 - VHDL
