@@ -29,39 +29,39 @@ architecture behav of mux2_tb is
         stimulus : process
         begin
 
-        -- test case 1 
-        a_tb <= '0';
-        b_tb <= '1';
-        sel_tb <= '0';
-        wait for 10 ns;
-        assert y_tb = '0'
-            report "Test case 1 failed"
-            severity error;
-        
-        -- test case 2
-        sel_tb <= '1';
-        wait for 10 ns;
-        assert y_tb = '1'
-            report "Test case 2 failed"
-            severity error;
-        
-        -- test case 3
-        a_tb <= '1';
-        b_tb <= '0';
-        sel_tb <= '0';
-        wait for 10 ns;
-        assert y_tb = '1'
-            report "Test case 3 failed"
-            severity error;
-        
-        -- test case 4
-        sel_tb <= '1';
-        wait for 10 ns;
-        assert y_tb <= '0'
-            report "Test case 4 failed"
-            severity error;
-        
-        wait;    
+            -- test case 1 
+            a_tb <= '0';
+            b_tb <= '1';
+            sel_tb <= '0';
+            wait for 10 ns;
+            assert y_tb = '0'
+                report "Test case 1 failed"
+                severity error;
+            
+            -- test case 2
+            sel_tb <= '1';
+            wait for 10 ns;
+            assert y_tb = '1'
+                report "Test case 2 failed"
+                severity error;
+            
+            -- test case 3
+            a_tb <= '1';
+            b_tb <= '0';
+            sel_tb <= '0';
+            wait for 10 ns;
+            assert y_tb = '1'
+                report "Test case 3 failed"
+                severity error;
+            
+            -- test case 4
+            sel_tb <= '1';
+            wait for 10 ns;
+            assert y_tb <= '0'
+                report "Test case 4 failed"
+                severity error;
+            
+            wait;    
 
         end process;
     end behav;
